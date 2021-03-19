@@ -48,6 +48,10 @@
                 bloginfo("description");
             ?>
         </h1>
-        <?php } ?>
-
-        
+        <?php } else if (is_category()) { ?>
+            <h1 class="category-title"> <?php esc_html_e("Articoli in categoria:");?> <?php echo single_cat_title() ?></h1>
+        <?php } else if (is_tag()) { ?>
+            <h1 class="tag-title"><?php esc_html_e("Articoli con tag #");?><?php echo single_cat_title() ?></h1>
+        <?php } else if (is_search()){ ?>
+            <h1 class="search-title"><?php esc_html_e("Cerca: ");?> <strong><i><?php echo $s; ?></i></strong></h1>
+        <?php } ?> 

@@ -18,12 +18,25 @@
             </h1>
             <p>
                 <i class="fa fa-clock-o"></i>
-
+                <?php the_time("j M, Y");?>
+                <i class="fa fa-thumb-tack"></i>
+                <?php the_category(" - ");?>
             </p>
             <a href="<?php the_permalink(); ?>">
                 <?php the_post_thumbnail("magazine-single", array("class" => "img-res", "alt" => get_the_title())); ?>
             </a>
             <?php the_content();?>
+
+            <?php 
+                $post_tags=wp_get_post_tags($post->ID);
+                if(!empty($post_tags)) {?>
+                    <p class="tag"><small><?php esc_html_e("Tag: ");?></small> <?php the_tags("", " - ",""); ?> </p>
+                <?php } ?>
+            <hr>
+
+            <div class="comments">
+                <?php comments_template();?>
+            </div>
         </article>
     <?php
         endwhile;
@@ -41,8 +54,8 @@
     ?>
 
     <?php else : ?> 
-        <h1>404</h1>
-        <h3>No items found.</h3>
+        <h1 class="error-404"><?php esc_html_e("404");?></h1>
+        <h3 class="error-404"><?php esc_html_e("Nessun risultato corrisponde ai parametri richiesti");?></h3>
     <?php endif; ?>
 
 </div>

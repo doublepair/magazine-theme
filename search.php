@@ -43,8 +43,8 @@
     ?>
 
     <?php else : ?> 
-        <h1>404</h1>
-        <h3>No items found.</h3>
+        <h1 class="error-404"><?php esc_html_e("404");?></h1>
+        <h3 class="error-404"><?php esc_html_e("Nessun risultato corrisponde ai parametri richiesti");?></h3>
     <?php endif; ?>
 
 </div>

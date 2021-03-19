@@ -22,6 +22,7 @@ if ( ! function_exists( "magazine_setup" ) ) {
             "header" => esc_html__("Header", "magazine")
         ));
 
+        //languages
         load_theme_textdomain("magazine", get_template_directory()."/languages");
     }
 }
@@ -54,6 +55,8 @@ if( ! function_exists("magazine_style_scripts")){
         wp_enqueue_script("magazine-scripts", get_template_directory_uri()."/js/scripts.js", array("jquery"), "", true);
 
         wp_enqueue_style("magazine-roboto", "//fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
+        wp_enqueue_style("magazine-normalize", "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
 
         wp_enqueue_style("magazine", get_template_directory_uri().'/style.css');
         

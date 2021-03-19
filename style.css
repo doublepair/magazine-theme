@@ -14,6 +14,21 @@ License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
 body, html{font-family: "Roboto"; background-color: rgb(53, 53, 54);}
 
+/* ALL */
+input{
+    border: 1px solid rgb(53, 53, 54);
+}
+input[type="submit"]{
+    color: rgb(255, 255, 255);
+    background-color: rgb(53, 53, 54);
+}
+input[type="form"]{
+
+}
+hr{
+    
+}
+
 .container{
     max-width: 1200px; 
     margin:0 auto; 
@@ -40,6 +55,56 @@ body, html{font-family: "Roboto"; background-color: rgb(53, 53, 54);}
     text-align: center;
 }
 
+/*tags*/
+.content .tag{
+    display: inline-block;
+    background-color: blueviolet;
+    border-radius: 5px;
+    border: none;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-top: 5px;
+}
+
+/*comments*/
+.comments{
+    margin-top: 25px;
+}
+.comment-body{
+    margin: 20px 15px;
+}
+.comment-form-comment textarea{
+    width: 100%;
+    height: 30px;
+    background-color: rgb(53, 53, 54);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+.form-submit input{
+    font-size: 15px;
+    padding: 3%;
+    margin: 5px 5px;
+    background-color: rgb(128, 3, 3);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: none;
+}
+.comment-author.vcard img{
+    border-width: 1px;
+    border-color: aquamarine;
+    border-radius: 100%;
+}
+/*no logged comments*/
+.comment-form-author input{
+
+}
+.comment-form-email input{
+
+}
+.comment-form-url{
+
+}
+
 .sidebar{
     width: 15%;
     float: left;
@@ -54,6 +119,9 @@ body, html{font-family: "Roboto"; background-color: rgb(53, 53, 54);}
         text-decoration: none;
         list-style-type: none;
         padding: 10px 10px;
+    }
+    .screen-reader-text{
+        display: none;
     }
 
 .header{
