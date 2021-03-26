@@ -126,7 +126,6 @@ h6{}
         border: none;
     }
     .navbar-menu-social{
-
     }
     /*------ Social Icons ------*/
     .navbar-menu-facebook{
@@ -253,6 +252,31 @@ body{
 .content{
     padding-right: 10%;
     padding-left: 10%;
+}
+
+/* ------------------------------------------ Articles *****-------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------- */
+article p{
+    color: #fff;
+}
+article a{
+    text-decoration: none;
+    color: #FFC107;
+}
+article a:hover{
+    text-decoration: none;
+    color: #b88a00;
+}
+article .comments p{
+    color: rgb(186, 186, 186);
+}
+article .comment-form-comment textarea{
+    border-radius: 10px;
+    border-color: #FFC107;
+    height: 35px;
+    background-color: rgb(55, 55, 55);
+    box-shadow: 2px 2px 1px #8c8c8c;
+    color: #fff;
 }
 
 /* ------------------------------------------ Media Queries -------------------------------------------- */

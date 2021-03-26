@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="vendor/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/vendor/font-awesome-4.7.0/css/font-awesome.min.css">
     <!-- Main.css -->
     <link href="/style.css" rel="stylesheet">
     <title>Magazine Title</title>

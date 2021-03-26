@@ -60,6 +60,7 @@ if( ! function_exists("magazine_style_scripts")){
 
         wp_enqueue_style("magazine", get_template_directory_uri().'/style.css');
         
+        wp_enqueue_style("magazine-fontawesome", get_template_directory_uri().'/vendor/font-awesome-4.7.0/css/font-awesome.min.css');
     }
 }
 
