@@ -9,6 +9,38 @@
     <?php 
         while(have_posts()) : the_post();
     ?>
+
+
+    <!--Posts' cards-->
+    <div class="card-group">
+    <div class="card bg-dark">
+        <img src="<?php get_post_gallery_images();?>" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title"><?php the_title();?></h5>
+            <p class="card-text"><?php the_content();?></p>
+            <p class="card-text"><small class="text-muted">
+                <i class="fa fa-clock-o"></i>
+                <?php the_time("j M, Y");?>
+                <i class="fa fa-thumb-tack"></i>
+                <?php the_category(" - ");?>
+            </small></p>
+            <a href="<?php the_permalink(); ?>" class="btn btn-primary">Vai</a>
+        </div>
+    </div>
+    </div>
+
+
+
+    <div class="card text-white bg-dark mb-3 post-card" style="width: 18rem;">
+        <img src="<?php get_post_gallery_images(); ?>" class="card-img-top" alt=" <?php the_title(); ?>">
+    <div class="card-body">
+        <h5 class="card-title"><?php the_title(); ?></h5>
+        <p class="card-text"><?php the_content();?></p>
+        <a href="<?php the_permalink(); ?>" class="btn btn-primary">Vai</a>
+    </div>
+    </div>
+    
+
         <article id=
                 "post-<?php the_ID(); ?>"
                 <?php post_class( );?>

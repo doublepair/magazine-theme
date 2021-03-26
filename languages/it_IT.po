@@ -16,7 +16,7 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 
 #: header.php:52
-msgid "Articoli in categoria:"
+msgid "Articoli in categoria: "
 msgstr "Articles in category: "
 
 #: header.php:54
@@ -33,8 +33,8 @@ msgstr "404"
 
 #: index.php:49 page.php:45 search.php:47 single.php:58
 msgid "Nessun risultato corrisponde ai parametri richiesti"
-msgstr "No matches with the search"
+msgstr "No results found"
 
 #: single.php:33
 msgid "Tag: "
-msgstr "Tag"
+msgstr "Tag: "

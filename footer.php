@@ -1,16 +1,23 @@
-<div class="clearfix"></div>
 
-    <footer>
-        <p>
-            &copy; Copyright
-            <?php echo date("o");?>
-            -
-            <?php bloginfo("name"); ?>
-        </p>
+        <div class="clearfix"></div>
+<!-- Footer -->
+<footer>
+        <hr style="display: block; height: 1px;
+            border: 0; border-top: 1px solid #ccc;
+            margin: 1em 0; padding: 0;">
+        <h3 style="text-align: center;">
+            Magazine Theme | Copyright &copy <?php echo date("o");?>
+            Yaros M.
+        </h3>
     </footer>
-        
-    </div>
-        <?php wp_footer();?>
-    </body>
+
+    <?php wp_footer();?>
+
+
+    <!-- JQuery, Popper, BootStrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
 
 </html>
